@@ -3,6 +3,7 @@ kind: Kustomization
 resources:
   - grafana_helmrepo.yaml
   - grafana_helmrelease.yaml
+  - namespace.yaml
 
 metadata:
   namespace: observability
