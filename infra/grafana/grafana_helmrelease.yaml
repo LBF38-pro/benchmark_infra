@@ -13,4 +13,19 @@ spec:
         kind: HelmRepository
         name: grafana
       version: 10.1.3
+  install:
+    remediation:
+      retries: 3
+  upgrade:
+    remediation:
+      retries: 3
+  test:
+    enable: true
+  driftDetection:
+    mode: enabled
+    ignore:
+      - paths: ["/spec/replicas"]
+        target:
+          kind: Deployment
   interval: 1m0s
+  timeout: 3m
