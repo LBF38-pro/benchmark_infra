@@ -6,3 +6,4 @@ metadata:
 resources:
   - opentelemetry-operator.yaml
   - otelcol.yaml
+  - selfsigned-clusterissuer.yaml

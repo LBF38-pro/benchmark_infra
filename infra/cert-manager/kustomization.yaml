@@ -3,5 +3,4 @@ kind: Kustomization
 resources:
   - helmrepo.yaml
   - helmrelease.yaml
-  - selfsigned-clusterissuer.yaml
   - namespace.yaml
